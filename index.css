@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+#date{
+    display: flex;
+    font-size: 2rem;
+    font-family: Righteous;
+    padding: 25px 0;
+    font-weight: 300;
+}
+#date div{
+    padding-right: 15px;
+}
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+    padding: 20px;
+    font-size: 23px;
+    font-family: 'Righteous';
+    color: #444343;
+    text-shadow: darkred;
+}
+
+ul {
+    display: flex;
+}
+
+.active_li {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e50022, 0 0 40px #e50022, 0 0 50px #e50022, 0 0 60px #e50022, 0 0 70px #e50022;
+    color: white;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#time {
+    font-size: 5rem;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+#toggleType{
+    font-family: Righteous;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e50022, 0 0 40px #e50022, 0 0 50px #e50022, 0 0 60px #e50022, 0 0 70px #e50022;
+    }
+    to{
+        text-shadow: 0 0 20px #fff, 0 0 30px #e20000, 0 0 40px #e20000, 0 0 50px #e20000, 0 0 60px #e20000, 0 0 70px #e20000, 0 0 80px #e20000;
+    }
+}
